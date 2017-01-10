@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--MainVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainVC" customModule="ClassModel" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Vehicle Year" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fMu-IA-mRe">
+                                <rect key="frame" x="97" y="31" width="172" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="172" id="Lpi-Dt-hLU"/>
+                                    <constraint firstAttribute="height" constant="30" id="ea4-vV-8Gd"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Vehicle Make" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jgy-xq-Kkp">
+                                <rect key="frame" x="97" y="69" width="172" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="172" id="1km-6w-jPI"/>
+                                    <constraint firstAttribute="height" constant="30" id="aoH-cg-ETm"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Vehicle Model" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5kJ-sT-1W3">
+                                <rect key="frame" x="97" y="107" width="172" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="172" id="LHf-xg-qJx"/>
+                                    <constraint firstAttribute="height" constant="30" id="fFd-pT-Egb"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Im2-Nf-hC0">
+                                <rect key="frame" x="103" y="145" width="160" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="kSk-JX-NF9"/>
+                                </constraints>
+                                <state key="normal" title="Show Description"/>
+                                <connections>
+                                    <action selector="descriptionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="75r-PW-M1y"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yr Mk Md" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JOM-NX-PhH">
+                                <rect key="frame" x="97" y="189" width="172" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="172" id="3rD-JX-cfN"/>
+                                    <constraint firstAttribute="height" constant="21" id="nB5-pR-OsN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Im2-Nf-hC0" firstAttribute="top" secondItem="5kJ-sT-1W3" secondAttribute="bottom" constant="8" id="3c2-4v-LkD"/>
+                            <constraint firstItem="Im2-Nf-hC0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-4.5" id="5j5-ea-jQv"/>
+                            <constraint firstItem="fMu-IA-mRe" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="11" id="HlB-Mm-dQC"/>
+                            <constraint firstItem="jgy-xq-Kkp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-4.5" id="RSu-Cd-FLg"/>
+                            <constraint firstItem="5kJ-sT-1W3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-4.5" id="SHt-nD-gUP"/>
+                            <constraint firstItem="5kJ-sT-1W3" firstAttribute="top" secondItem="jgy-xq-Kkp" secondAttribute="bottom" constant="8" id="ZVz-Ap-3RO"/>
+                            <constraint firstItem="JOM-NX-PhH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-4.5" id="h5G-5G-C1j"/>
+                            <constraint firstItem="fMu-IA-mRe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-4.5" id="jFT-ry-NNS"/>
+                            <constraint firstItem="JOM-NX-PhH" firstAttribute="top" secondItem="Im2-Nf-hC0" secondAttribute="bottom" constant="14" id="kmZ-j2-8sU"/>
+                            <constraint firstItem="jgy-xq-Kkp" firstAttribute="top" secondItem="fMu-IA-mRe" secondAttribute="bottom" constant="8" id="srk-Mv-M5a"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="makeTextField" destination="jgy-xq-Kkp" id="wYr-7h-Ozx"/>
+                        <outlet property="modelTextField" destination="5kJ-sT-1W3" id="HAH-Uu-7La"/>
+                        <outlet property="vehDescriptionLabel" destination="JOM-NX-PhH" id="gpF-hE-Hzo"/>
+                        <outlet property="yearTextField" destination="fMu-IA-mRe" id="woX-5u-nnL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
